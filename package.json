@@ -11,7 +11,8 @@
     "build": "run-s prod:*",
     "prod:del": "rimraf web",
     "prod:webpack": "webpack --mode production",
-    "prod:eleventy": "ELEVENTY_ENV=production eleventy"
+    "prod:eleventy": "ELEVENTY_ENV=production eleventy",
+    "deploy": "rsync -avz web/* web-server:/var/www/kalkbrenner/web"
   },
   "repository": {
     "type": "git",
