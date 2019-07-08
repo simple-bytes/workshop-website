@@ -5,14 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "npm-run-all --parallel dev:*",
-    "dev:del": "rimraf dist",
+    "dev:del": "rimraf web",
     "dev:eleventy": "ELEVENTY_ENV=development eleventy --watch",
     "dev:webpack": "webpack-dev-server --mode development --watch",
     "build": "run-s prod:*",
-    "now-build": "run-s prod:*",
-    "prod:del": "rimraf build",
-    "prod:webpack": "webpack",
-    "prod:serve": "ELEVENTY_ENV=production eleventy"
+    "prod:del": "rimraf web",
+    "prod:webpack": "webpack --mode production",
+    "prod:eleventy": "ELEVENTY_ENV=production eleventy"
   },
   "repository": {
     "type": "git",
