@@ -32,7 +32,7 @@ function initHeadroom() {
     if (!navbar) return
 
     const headroom  = new Headroom(navbar, {
-        'offset': 205,
+        'offset': 75,
         'tolerance': 5,
         'classes': {
           'initial': 'animated',

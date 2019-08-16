@@ -4,6 +4,8 @@
 @import "./fonts.scss";
 @import "./typography.scss";
 
+// custom variables
+$padding-sides: 1rem;
 $brand-yellow: #fcd31f;
 $brand-blue: #1b3e77;
 
@@ -20,6 +22,7 @@ $navbar-item-img-max-height: $navbar-height;
 
 // pages
 @import "./pages/homepage.scss";
+@import "./pages/page-content.scss";
 
 // components
 @import "./components/logo.scss";

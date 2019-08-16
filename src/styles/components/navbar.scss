@@ -21,4 +21,12 @@
     &.headroom--not-top .logo {
         width: 50%;
     }
+
+    .buttons {
+        margin-left: 0.8rem;
+
+        @media screen and (max-width: $desktop - 1) {
+            margin-top: 1rem;
+        }
+    }
 }
