@@ -1,0 +1,34 @@
+<nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                {% include "components/logo.html" %}
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbar" class="navbar-menu">
+            <div class="navbar-start">
+                <!-- <a href="#kontakt" class="navbar-item">
+                    Kontakt
+                </a> -->
+            </div>
+
+            <div class="navbar-end">
+                <div class="buttons">
+                    <a class="button is-primary">
+                        <span class="fa fa-phone"></span>{{config.companyPhone}}
+                    </a>
+                    <a class="button is-primary">
+                        <span class="fa fa-envelope"></span>{{config.companyEmail}}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

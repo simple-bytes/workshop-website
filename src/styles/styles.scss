@@ -1,4 +1,27 @@
 @charset "utf-8";
 
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import "./fonts.scss";
+@import "./typography.scss";
+
+$brand-yellow: #fcd31f;
+$brand-blue: #1b3e77;
+
+// bulma variables
+$blue: $brand-blue;
+$yellow: $brand-yellow;
+$primary: $blue;
+$family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$navbar-height: 8rem;
+$navbar-item-img-max-height: $navbar-height;
+
 // Import all of Bulma
 @import "~bulma/bulma";
+
+// pages
+@import "./pages/homepage.scss";
+
+// components
+@import "./components/logo.scss";
+@import "./components/navbar.scss";
+@import "./components/footer.scss";

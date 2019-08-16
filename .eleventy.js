@@ -5,6 +5,10 @@ module.exports = function(eleventyConfig) {
       return DateTime.fromJSDate(dateObj).toFormat('yyyy-LL-dd');
     });
 
+    eleventyConfig.addFilter('htmlYear', (dateObj) => {
+      return DateTime.fromJSDate(dateObj).toFormat('yyyy');
+    });
+
     return {
       templateFormats: [
         'md',
