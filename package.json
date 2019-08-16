@@ -12,7 +12,7 @@
     "prod:del": "rimraf web",
     "prod:webpack": "webpack --mode production",
     "prod:eleventy": "ELEVENTY_ENV=production eleventy",
-    "deploy": "rsync -avz web/* web-server:/var/www/pension-elli/web"
+    "deploy": "rsync -avz web/* web-server:/var/www/kalkbrenner/web"
   },
   "repository": {
     "type": "git",
@@ -59,6 +59,7 @@
   "dependencies": {
     "flickity": "^2.2.1",
     "google-maps": "^3.3.0",
-    "headroom.js": "^0.9.4"
+    "headroom.js": "^0.9.4",
+    "scrollreveal": "^4.0.5"
   }
 }
