@@ -57,6 +57,8 @@
     ]
   },
   "dependencies": {
-    "flickity": "^2.2.1"
+    "flickity": "^2.2.1",
+    "google-maps": "^3.3.0",
+    "headroom.js": "^0.9.4"
   }
 }

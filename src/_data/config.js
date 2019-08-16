@@ -7,5 +7,5 @@ module.exports = {
     companyEmail: 'office@kfz-kalkbrenner.at',
     companyStreetAddress: 'Augasse 2',
     companyZip: '7371',
-    companyCity: 'Unterrabnitz-Schwendgraben'
+    companyCity: 'Unterrabnitz-Schwendgraben',
 };

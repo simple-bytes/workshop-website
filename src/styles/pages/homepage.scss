@@ -1,4 +1,13 @@
+$padding-sides: 1rem;
+
 .page-homepage {
+    @media screen and (max-width: $desktop - 1) {
+        .container {
+            padding-left: $padding-sides;
+            padding-right: $padding-sides;
+        }
+    }
+
     &__header {
         position: relative;
 
@@ -8,15 +17,42 @@
 
         .header-slider-item {
             width: 100%;
-            max-height: 640px;
+            height: 60vw;
+            min-height: 40vh;
+            max-height: 80vh;
             img {
                 object-fit: cover;
                 min-width: 100%;
+                min-height: 100%;
             }
         }
 
         .flickity-prev-next-button {
             z-index: 10;
+        }
+
+        .slide-image-1 {
+            object-position: 75% 25%;
+        }
+
+        .slide-image-2 {
+            object-position: 50% 50%;
+        }
+
+        .slide-image-3 {
+            object-position: 50% 75%;
+        }
+
+        .slide-image-4 {
+            object-position: 66% 33%;
+        }
+
+        .slide-image-5 {
+            object-position: 80% 50%;
+        }
+
+        .slide-image-6 {
+            object-position: 50% 100%;
         }
     }
 
@@ -36,10 +72,14 @@
         font-size: 3rem;
         font-style: italic;
         font-family: serif;
-        margin: 0 2rem 4rem 2rem;
+        margin: 0 $padding-sides 4rem $padding-sides;
         padding: 0.4rem;
         background: rgba(0, 0, 0, 0.5);
         border-radius: 5px;
+
+        @media screen and (max-width: $tablet - 1) {
+            font-size: 2rem;
+        }
     }
 
     &__welcome {
@@ -62,8 +102,13 @@
         }
     }
 
-    &__opening-hours {
+    &__contact {
         margin-top: 4rem;
         margin-bottom: 4rem;
+
+        .map {
+            width: 100%;
+            height: 300px;
+        }
     }
 }

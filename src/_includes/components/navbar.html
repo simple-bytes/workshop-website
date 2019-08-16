@@ -14,17 +14,20 @@
 
         <div id="navbar" class="navbar-menu">
             <div class="navbar-start">
-                <!-- <a href="#kontakt" class="navbar-item">
+                <a href="#leistungen" class="navbar-item is-size-4 has-text-weight-semibold">
+                    Leistungen
+                </a>
+                <a href="#kontakt" class="navbar-item is-size-4 has-text-weight-semibold">
                     Kontakt
-                </a> -->
+                </a>
             </div>
 
             <div class="navbar-end">
                 <div class="buttons">
-                    <a class="button is-primary">
+                    <a href="tel:{{config.companyPhone}}" class="button is-primary">
                         <span class="fa fa-phone"></span>{{config.companyPhone}}
                     </a>
-                    <a class="button is-primary">
+                    <a href="mailto:{{config.companyEmail}}" class="button is-primary">
                         <span class="fa fa-envelope"></span>{{config.companyEmail}}
                     </a>
                 </div>

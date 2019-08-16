@@ -7,12 +7,12 @@ priority: 1
 <div class="page-homepage">
     <section class="page-homepage__header">
         <div class="header-slider">
-            <div class="header-slider-item"><img src="/images/slideshow/slide-1.jpg" alt="" /></div>
-            <div class="header-slider-item"><img src="/images/slideshow/slide-2.jpg" alt="" /></div>
-            <div class="header-slider-item"><img src="/images/slideshow/slide-3.jpg" alt="" /></div>
-            <div class="header-slider-item"><img src="/images/slideshow/slide-4.jpg" alt="" /></div>
-            <div class="header-slider-item"><img src="/images/slideshow/slide-5.jpg" alt="" /></div>
-            <div class="header-slider-item"><img src="/images/slideshow/slide-6.jpg" alt="" /></div>
+            <div class="header-slider-item"><img class="slide-image-1" src="/images/slideshow/slide-1.jpg" alt="" /></div>
+            <div class="header-slider-item"><img class="slide-image-2" src="/images/slideshow/slide-2.jpg" alt="" /></div>
+            <div class="header-slider-item"><img class="slide-image-3" src="/images/slideshow/slide-3.jpg" alt="" /></div>
+            <div class="header-slider-item"><img class="slide-image-4" src="/images/slideshow/slide-4.jpg" alt="" /></div>
+            <div class="header-slider-item"><img class="slide-image-5" src="/images/slideshow/slide-5.jpg" alt="" /></div>
+            <div class="header-slider-item"><img class="slide-image-6" src="/images/slideshow/slide-6.jpg" alt="" /></div>
         </div>
         <div class="page-homepage__tagline-container">
             <p class="page-homepage__tagline">„Meisterleistung aus Meisterhand“</p>
@@ -29,7 +29,7 @@ priority: 1
 
     <section class="page-homepage__services content hero is-primary">
         <div class="container">
-            <h2 class="h2 has-text-white">Unsere Leistungen</h2>
+            <h2 class="h2 has-text-white" id="leistungen">Unsere Leistungen</h2>
         </div>
         <div class="container">
             <div class="columns is-multiline">
@@ -93,18 +93,46 @@ priority: 1
         </div>
     </section>
 
-    <section class="page-homepage__opening-hours content">
+    <section class="page-homepage__contact content">
         <div class="container">
-            <h2 class="h2">Öffnungszeiten</h2>
-            <ul>
-                <li>Montag: geschlossen</li>
-                <li>Dienstag: 8:00-12:00, 13:00-18:00</li>
-                <li>Mittwoch: 8:00-12:00, 13:00-18:00</li>
-                <li>Donnerstag: 8:00-12:00, 13:00-18:00</li>
-                <li>Freitag: 8:00-12:00, 13:00-18:00</li>
-                <li>Samstag: 8:00-12:00, 13:00-18:00</li>
-                <li>Sonntag: geschlossen</li>
-            </ul>
+            <div class="columns">
+                <div class="column">
+                    <div class="is-one-third">
+                        <h2 class="h2" id="kontakt">Kontakt</h2>
+                        <p>
+                            {{config.companyName}}<br/>
+
+                            {{config.companyStreetAddress}}<br/>
+
+                            {{config.companyZip}} {{config.companyCity}}<br/>
+
+                            <a href="tel:{{config.companyPhone}}"><span class="fa fa-phone"></a>
+                            <a href="tel:{{config.companyPhone}}"></span>{{config.companyPhone}}</a><br/>
+
+                            <a href="mailto:{{config.companyEmail}}"><span class="fa fa-envelope"></span></a>
+                            <a href="mailto:{{config.companyEmail}}">{{config.companyEmail}}</a><br/>
+                        </p>
+                    </div>
+                </div>
+                <div class="column is-one-third">
+                    <h2 class="h2">Öffnungszeiten</h2>
+                    <ul>
+                        <li>Montag: geschlossen</li>
+                        <li>Dienstag: 8-12h, 13-18h</li>
+                        <li>Mittwoch: 8-12h, 13-18h</li>
+                        <li>Donnerstag: 8-12h, 13-18h</li>
+                        <li>Freitag: 8-12h, 13-18h</li>
+                        <li>Samstag: 8-12h, 13-18h</li>
+                        <li>Sonntag: geschlossen</li>
+                    </ul>
+               </div>
+               <div class="column">
+                    <div class="is-one-third">
+                        <h2 class="h2">Karte</h2>
+                        <div class="map"></div>
+                    </div>
+                </div>
+           </div>
         </div>
     </section>
 
