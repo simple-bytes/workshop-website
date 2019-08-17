@@ -56,6 +56,7 @@ module.exports = {
     // }),
     new CopyPlugin([
       { from: 'src/images', to: 'images' },
+      { from: 'src/images/favicons', to: '' },
     ])
   ],
   devServer: {
