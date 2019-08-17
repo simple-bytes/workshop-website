@@ -4,7 +4,6 @@ import 'cookieconsent/build/cookieconsent.min.css'
 document.addEventListener('DOMContentLoaded', init)
 
 function init() {
-    console.log('cookie consent init')
     window.cookieconsent.initialise({
         'palette': {
             'popup': {
