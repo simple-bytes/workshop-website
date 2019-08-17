@@ -10,6 +10,6 @@ function initSlideshow() {
         contain: true,
         autoPlay: true,
         wrapAround: true,
-        draggable: false
+        draggable: true
     })
 }

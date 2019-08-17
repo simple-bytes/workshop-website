@@ -56,16 +56,14 @@
 
     &__tagline-container {
         position: absolute;
-        top: 0;
-        right: 0;
         bottom: 0;
         left: 0;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
+        right: 0;
+        text-align: center;
     }
 
     &__tagline {
+        display: inline-block;
         color: $yellow;
         font-size: 3rem;
         font-style: italic;
@@ -82,7 +80,7 @@
 
     &__welcome {
         padding-top: 4rem;
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
     }
 
     &__services {
@@ -101,7 +99,7 @@
     }
 
     &__contact {
-        margin-top: 4rem;
+        margin-top: 2rem;
         margin-bottom: 4rem;
 
         .map {
