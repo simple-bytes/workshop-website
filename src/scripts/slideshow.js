@@ -9,6 +9,7 @@ function initSlideshow() {
     var flkty = new Flickity( elem, {
         contain: true,
         autoPlay: true,
-        wrapAround: true
+        wrapAround: true,
+        draggable: false
     })
 }

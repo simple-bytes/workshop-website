@@ -1,10 +1,43 @@
 @import "./navbar-animation.scss";
 
+$shrink-not-top: 0.7;
+$shrink-mobile: 0.5;
+$navbar-height: 140px;
+$logo-width: 200px;
+
 .navbar {
     padding-bottom: 0.5rem;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 
-    &.headroom--top.is-transparent {
+    height: $navbar-height * $shrink-not-top;
+
+    .logo {
+        width: $logo-width * $shrink-not-top;
+    }
+
+    @media screen and (max-width: $tablet - 1) {
+        height: $navbar-height * $shrink-mobile;
+        .logo {
+            width: $logo-width * $shrink-mobile;
+        }
+    }
+
+    #page-homepage &.headroom--top {
+        height: $navbar-height;
+
+        .logo {
+            width: $logo-width;
+        }
+
+        @media screen and (max-width: $tablet - 1) {
+            height: $navbar-height * $shrink-mobile;
+            .logo {
+                width: $logo-width * $shrink-mobile;
+            }
+        }
+    }
+
+    #page-homepage &.headroom--top.is-transparent {
         background-color: rgba(255, 255, 255, 0.8);
         background-image: none;
         box-shadow: none;
@@ -18,9 +51,7 @@
         transition: width 1s;
     }
 
-    &.headroom--not-top .logo {
-        width: 50%;
-    }
+
 
     .buttons {
         margin-left: 0.8rem;

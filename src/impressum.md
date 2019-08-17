@@ -3,6 +3,7 @@ layout: layouts/layout-content.html
 title: KFZ M. Kalkbrenner - Impressum
 changefreq: monthly
 priority: 1
+pageType: content
 ---
 # Impressum
 
