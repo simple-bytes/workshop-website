@@ -3,6 +3,36 @@
     padding-top: 1rem;
     padding-bottom: 2rem;
 
+    &__address {
+        @media screen and (max-width: $tablet - 1) {
+            .separator {
+                display: none;
+            }
+
+            > span {
+                display: block;
+                white-space: no-wrap;
+            }
+        }
+    }
+
+    &__contact {
+        > span:first-child {
+            margin-right: 0.5rem;
+        }
+
+        @media screen and (max-width: $tablet - 1) {
+            > span {
+                display: block;
+                white-space: no-wrap;
+            }
+
+            > span:first-child {
+                margin-right: 0;
+            }
+        }
+    }
+
     &__meisterlogo {
         margin-top: 1rem;
         width: 128px;
