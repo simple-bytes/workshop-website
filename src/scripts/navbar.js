@@ -36,7 +36,7 @@ function toggleMenu(burger, menu) {
 /* links */
 
 function initLinks(navbar, burger, menu) {
-    const links = navbar.querySelectorAll('.navbar-item')
+    const links = navbar.querySelectorAll('.navbar-start .navbar-item')
     links.forEach(function(link) {
         link.addEventListener('click', () => {
             if (isMobileNavOpen(burger, menu)) {
