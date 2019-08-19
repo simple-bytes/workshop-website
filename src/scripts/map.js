@@ -12,11 +12,24 @@ function init() {
 }
 
 function initGoogleMaps(el, google) {
-    const position = {lat: 47.471784, lng: 16.3544532}
+    const position = {lat: 47.4725200, lng: 16.3566532}
 
     const options = {
         zoom: 15,
         center: position,
+        zoomControl: true,
+        mapTypeControl: false,
+        scaleControl: true,
+        streetViewControl: false,
+        rotateControl: false,
+        fullscreenControl: false
     }
     const map = new google.maps.Map(el, options);
+
+    // const title = 'KFZ M. Kalkbrenner'
+    // var marker = new google.maps.Marker({
+    //     position,
+    //     map,
+    //     title
+    // })
 }
