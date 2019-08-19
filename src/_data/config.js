@@ -8,5 +8,6 @@ module.exports = {
     companyStreetAddress: 'Augasse 2',
     companyZip: '7371',
     companyCity: 'Unterrabnitz-Schwendgraben',
-    gtmId: 'GTM-WBLT3VW'
+    gtmId: 'GTM-WBLT3VW',
+    googleMapsUrl: 'https://goo.gl/maps/MDodkXm3iSoMw5KVA'
 };

@@ -106,7 +106,7 @@ pageType: homepage
                             {{config.companyStreetAddress}}<br/>
 
                             {{config.companyZip}} {{config.companyCity}}
-                            <a href="https://www.google.at/maps/place/KFZ+Manfred+Kalkbrenner/@47.471784,16.3544532,17z/data=!3m1!4b1!4m5!3m4!1s0x476e9ca4e2457c21:0x306e8cfe7cabddf6!8m2!3d47.471784!4d16.3566419" target="_blank">
+                            <a href="{{config.googleMapsUrl}}" target="_blank">
                                 <span class="fa fa-map-marker-alt"></span>
                             </a><br/>
 
@@ -120,15 +120,38 @@ pageType: homepage
                 </div>
                 <div class="column is-one-third">
                     <h2 class="h2">Öffnungszeiten</h2>
-                    <ul>
-                        <li>Montag: geschlossen</li>
-                        <li>Dienstag: 8-12h, 13-18h</li>
-                        <li>Mittwoch: 8-12h, 13-18h</li>
-                        <li>Donnerstag: 8-12h, 13-18h</li>
-                        <li>Freitag: 8-12h, 13-18h</li>
-                        <li>Samstag: 8-12h, 13-18h</li>
-                        <li>Sonntag: geschlossen</li>
-                    </ul>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Montag</td>
+                                    <td>geschlossen</td>
+                                </tr>
+                                <tr>
+                                    <td>Dienstag</td>
+                                    <td>07:30-17:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Mittwoch</td>
+                                    <td>07:30-17:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Donnerstag</td>
+                                    <td>07:30-17:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Freitag</td>
+                                    <td>07:30-17:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Samstag</td>
+                                    <td>07:30-17:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Sonntag</td>
+                                    <td>geschlossen</td>
+                                </tr>
+                            </tbody>
+                        </table>
                </div>
                <div class="column">
                     <div class="is-one-third">
