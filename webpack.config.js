@@ -1,21 +1,18 @@
 const path = require('path');
-// const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'web'),
-    filename: 'js/bundle.js'
+    filename: 'js/[name].bundle.js'
   },
   module: {
     rules: [{
       test: /\.scss$/,
       use: [
-        // MiniCssExtractPlugin.loader,
-        {
-          loader: 'style-loader'
-        },
+        MiniCssExtractPlugin.loader,
         {
           loader: 'css-loader'
         },
@@ -29,10 +26,7 @@ module.exports = {
     },{
       test: /\.css$/,
       use: [
-        // MiniCssExtractPlugin.loader,
-        {
-          loader: 'style-loader'
-        },
+        MiniCssExtractPlugin.loader,
         {
           loader: 'css-loader'
         }
@@ -51,9 +45,9 @@ module.exports = {
     }]
   },
   plugins: [
-    // new MiniCssExtractPlugin({
-    //   filename: 'css/[name].bundle.css'
-    // }),
+    new MiniCssExtractPlugin({
+      filename: 'css/[name].bundle.css'
+    }),
     new CopyPlugin([
       { from: 'src/images', to: 'images' },
       { from: 'src/images/favicons', to: '' },
