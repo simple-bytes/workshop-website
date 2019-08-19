@@ -23,7 +23,7 @@ module.exports = function(eleventyConfig) {
       dir: {
         input: 'src',
         includes: "_includes",
-        output: "web"
+        output: "build-11ty"
       }
     };
 };

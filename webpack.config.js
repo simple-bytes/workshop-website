@@ -1,12 +1,46 @@
 const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const glob = require('glob');
+
+const plugins = [
+  new MiniCssExtractPlugin({
+    filename: 'css/[contenthash].[name].bundle.css'
+  }),
+  new CopyPlugin([
+    { from: 'src/images', to: 'images' },
+    { from: 'src/images/favicons', to: '' },
+    {
+      from: 'build-11ty',
+      to: '',
+      ignore: 'index.html'
+    },
+  ])
+];
+
+const basePath = __dirname;
+console.log('basePath', basePath);
+const templateBasePath = path.join(basePath, '/build-11ty');
+console.log('templateBasePath', templateBasePath);
+
+glob.sync(`${basePath}/build-11ty/**/*.html`).forEach(function(item) {
+  const relativePath = path.relative(templateBasePath, item);
+  console.log('relativePath', relativePath);
+  plugins.push(
+    new HtmlWebpackPlugin({
+      filename: relativePath,
+      template: item
+    })
+  );
+});
 
 module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'web'),
-    filename: 'js/[name].bundle.js'
+    publicPath: '/',
+    filename: 'js/[contenthash].[name].bundle.js'
   },
   module: {
     rules: [{
@@ -44,15 +78,7 @@ module.exports = {
       }
     }]
   },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: 'css/[name].bundle.css'
-    }),
-    new CopyPlugin([
-      { from: 'src/images', to: 'images' },
-      { from: 'src/images/favicons', to: '' },
-    ])
-  ],
+  plugins: plugins,
   devServer: {
     contentBase: 'web',
     watchContentBase: true,

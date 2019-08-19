@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', initSlideshow)
 
 function initSlideshow() {
     const elem = document.querySelector('.header-slider');
+    if (!elem) return
 
     var flkty = new Flickity( elem, {
         contain: true,
