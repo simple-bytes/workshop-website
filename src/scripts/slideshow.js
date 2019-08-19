@@ -7,6 +7,8 @@ function initSlideshow() {
     const elem = document.querySelector('.header-slider');
     if (!elem) return
 
+    elem.style.display = 'block';
+
     var flkty = new Flickity( elem, {
         contain: true,
         autoPlay: true,

@@ -8,6 +8,10 @@
 
     &__header {
         position: relative;
+        background-size: cover;
+        height: 60vw;
+        min-height: 60vh;
+        max-height: 80vh;
 
         .header-slider {
             width: 100%;
