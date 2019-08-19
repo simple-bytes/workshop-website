@@ -2,6 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const glob = require('glob');
 
 const plugins = [
@@ -10,7 +11,7 @@ const plugins = [
   }),
   new CopyPlugin([
     { from: 'src/images', to: 'images' },
-    { from: 'src/images/favicons', to: '' }
+    // { from: 'src/images/favicons', to: '' }
   ])
 ];
 
@@ -26,6 +27,14 @@ glob.sync(`${basePath}/build-11ty/**/*.html`).forEach(function(item) {
     })
   );
 });
+
+plugins.push(
+  new FaviconsWebpackPlugin({
+    logo: './src/images/logo-image-bg-white.svg',
+    prefix: '',
+    inject: true
+  })
+);
 
 module.exports = {
   entry: './src/index.js',
