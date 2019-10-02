@@ -2,7 +2,6 @@
 
 @import "~@fortawesome/fontawesome-free/css/all.css";
 @import "./fonts.scss";
-@import "./typography.scss";
 
 // custom variables
 $padding-sides: 1rem;
@@ -13,7 +12,7 @@ $brand-blue: #1b3e77;
 $blue: $brand-blue;
 $yellow: $brand-yellow;
 $primary: $blue;
-$family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-sans-serif: "Open Sans", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 $navbar-height: 6rem;
 $navbar-item-img-max-height: none; // $navbar-height;
 
