@@ -11,6 +11,7 @@ const plugins = [
   }),
   new CopyPlugin([
     { from: 'src/images', to: 'images' },
+    { from: 'src/_redirects' }
   ])
 ];
 
