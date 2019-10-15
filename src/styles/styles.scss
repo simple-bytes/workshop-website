@@ -9,15 +9,22 @@ $brand-yellow: #fcd31f;
 $brand-blue: #1b3e77;
 
 // bulma variables
-$blue: $brand-blue;
+// $blue: $brand-blue;
 $yellow: $brand-yellow;
-$primary: $blue;
+$primary:  $brand-blue;
 $family-sans-serif: "Open Sans", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 $navbar-height: 6rem;
 $navbar-item-img-max-height: none; // $navbar-height;
 
 // Import all of Bulma
 @import "~bulma/bulma";
+
+// layout
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 // pages
 @import "./pages/homepage.scss";
@@ -29,3 +36,4 @@ $navbar-item-img-max-height: none; // $navbar-height;
 @import "./components/footer.scss";
 @import "./components/cookie-consent.scss";
 @import "./components/smooth-scroll.scss";
+@import "./components/news-list-item.scss";

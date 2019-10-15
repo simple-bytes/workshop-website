@@ -2,7 +2,7 @@ const { DateTime } = require('luxon');
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-      return DateTime.fromJSDate(dateObj).toFormat('yyyy-LL-dd');
+      return DateTime.fromJSDate(dateObj).toFormat('dd.MM.yyyy');
     });
 
     eleventyConfig.addFilter('htmlYear', (dateObj) => {

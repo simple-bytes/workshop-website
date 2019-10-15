@@ -20,12 +20,48 @@ pageType: homepage
         </div>
     </section>
 
-    <section class="page-homepage__welcome content">
-        <div class="container">
-            <h2 class="h2">Willkommen bei KFZ M. Kalkbrenner</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab illo placeat temporibus obcaecati, recusandae incidunt. Iste, quia. Odit dolore enim voluptatibus in recusandae veniam voluptas eum quia suscipit, dignissimos praesentium voluptates tempore tenetur dolor aspernatur eligendi id similique accusantium natus sequi quo maiores? Exercitationem, aliquid. Dolorum expedita quod culpa perferendis?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab illo placeat temporibus obcaecati, recusandae incidunt. Iste, quia. Odit dolore enim voluptatibus in recusandae veniam voluptas eum quia suscipit, dignissimos praesentium voluptates tempore tenetur dolor aspernatur eligendi id similique accusantium natus sequi quo maiores? Exercitationem, aliquid. Dolorum expedita quod culpa perferendis?</p>
-        </div>
+    <section class="page-homepage__welcome">
+        <section class="section">
+            <div class="container">
+                <div class="content">
+                    <h2 id="aktuelles">Aktuelles</h2>
+                </div>
+                <div class="columns is-multiline">
+                    {%- for news in collections.news | reverse -%}
+                        <div class="column is-half">
+                            <div class="media news-list-item">
+                                <div class="media-left">
+                                    <figure class="image is-128x128">
+                                        <img src="{{news.data.thumbnail}}" alt="{{news.data.title}}"/>
+                                    </figure>
+                                </div>
+                                <div class="media-content content">
+                                    <h3 class="news-list-item__title h3">
+                                        <a href="{{news.url}}">
+                                            {{ news.data.title }}
+                                        </a>
+                                    </h3>
+                                    <p class="news-list-item__abstract">
+                                        {{news.data.abstract}}
+                                        <a class="news-list-item__link" href="{{news.url}}">Mehr erfahren &rarr;</a>
+                                    </p>
+                                    <div class="has-text-grey is-size-7">eingetragen am {{news.date | htmlDateString}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    {%- endfor -%}
+                </ul>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="content">
+                    <h2 class="h2">Willkommen bei KFZ M. Kalkbrenner</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab illo placeat temporibus obcaecati, recusandae incidunt. Iste, quia. Odit dolore enim voluptatibus in recusandae veniam voluptas eum quia suscipit, dignissimos praesentium voluptates tempore tenetur dolor aspernatur eligendi id similique accusantium natus sequi quo maiores? Exercitationem, aliquid. Dolorum expedita quod culpa perferendis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab illo placeat temporibus obcaecati, recusandae incidunt. Iste, quia. Odit dolore enim voluptatibus in recusandae veniam voluptas eum quia suscipit, dignissimos praesentium voluptates tempore tenetur dolor aspernatur eligendi id similique accusantium natus sequi quo maiores? Exercitationem, aliquid. Dolorum expedita quod culpa perferendis?</p>
+                </div>
+            </div>
+        </section>
     </section>
 
     <section class="page-homepage__services content hero is-primary">
@@ -37,7 +73,7 @@ pageType: homepage
                 <div class="column is-half">
                     <div class="card">
                         <div class="card-header">
-                            <div class="card-header-title">Reparatur &amp; Service</div>
+                            <div class="card-header-title"><h3 class="h3">Reparatur &amp; Service</h3></div>
                             <div class="card-header-icon">
                                 <img src="/images/services/reparatur.png" alt="Reparatur und Service">
                             </div>
@@ -50,7 +86,7 @@ pageType: homepage
             <div class="column is-half">
                 <div class="card">
                     <div class="card-header">
-                        <div class="card-header-title">Spenglerarbeiten</div>
+                        <div class="card-header-title"><h3 class="h3">Spengler&shy;arbeiten</h3></div>
                         <div class="card-header-icon">
                             <img src="/images/services/spengler.png" alt="Spenglerarbeiten">
                         </div>
@@ -63,7 +99,7 @@ pageType: homepage
             <div class="column is-half page-homepage__pickerl">
                 <div class="card">
                     <div class="card-header">
-                        <div class="card-header-title">§57a Begutachtungen</div>
+                        <div class="card-header-title"><h3 class="h3">§57a Begutachtungen</h3></div>
                         <div class="card-header-icon">
                             <img src="/images/services/pickerl.png" alt="§57a Begutachtungen">
                         </div>
@@ -81,7 +117,7 @@ pageType: homepage
             <div class="column is-half">
                 <div class="card">
                     <div class="card-header">
-                        <div class="card-header-title">Gebrauchtwagenhandel</div>
+                        <div class="card-header-title"><h3 class="h3">Gebrauchtwagen&shy;handel</h3></div>
                         <div class="card-header-icon">
                             <img src="/images/services/gebrauchtwagen.png" alt="Reparatur und Service">
                         </div>
