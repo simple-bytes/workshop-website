@@ -1,11 +1,4 @@
 .page-homepage {
-    @media screen and (max-width: $desktop - 1) {
-        .container {
-            padding-left: $padding-sides;
-            padding-right: $padding-sides;
-        }
-    }
-
     &__header {
         position: relative;
         background-size: cover;
@@ -82,33 +75,14 @@
         }
     }
 
-    &__welcome {
-        padding-top: 4rem;
-        padding-bottom: 2rem;
-    }
-
-    &__services {
-        padding-top: 2rem;
-        padding-bottom: 4rem;
-
-        .h2 {
-            margin-bottom: 2rem;
-        }
-    }
-
     &__pickerl {
         .media-left img {
             width: 100px;
         }
     }
-
-    &__contact {
-        margin-top: 2rem;
-        margin-bottom: 4rem;
-
-        .map {
-            width: 100%;
-            height: 300px;
-        }
+    
+    .map {
+        width: 100%;
+        height: 300px;
     }
 }

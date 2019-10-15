@@ -20,55 +20,50 @@ pageType: homepage
         </div>
     </section>
 
-    <section class="page-homepage__welcome">
-        <section class="section">
-            <div class="container">
-                <div class="content">
-                    <h2 id="aktuelles">Aktuelles</h2>
-                </div>
-                <div class="columns is-multiline">
-                    {%- for news in collections.news | reverse -%}
-                        <div class="column is-half">
-                            <div class="media news-list-item">
-                                <div class="media-left">
-                                    <figure class="image is-128x128">
-                                        <img src="{{news.data.thumbnail}}" alt="{{news.data.title}}"/>
-                                    </figure>
-                                </div>
-                                <div class="media-content content">
-                                    <h3 class="news-list-item__title h3">
-                                        <a href="{{news.url}}">
-                                            {{ news.data.title }}
-                                        </a>
-                                    </h3>
-                                    <p class="news-list-item__abstract">
-                                        {{news.data.abstract}}
-                                        <a class="news-list-item__link" href="{{news.url}}">Mehr erfahren &rarr;</a>
-                                    </p>
-                                    <div class="has-text-grey is-size-7">eingetragen am {{news.date | htmlDateString}}</div>
-                                </div>
+    <section class="section">
+        <div class="container">
+            <div class="content">
+                <h2 id="aktuelles">Aktuelles</h2>
+            </div>
+            <div class="columns is-multiline">
+                {%- for news in collections.news | reverse -%}
+                    <div class="column is-half">
+                        <div class="media news-list-item">
+                            <div class="media-left">
+                                <figure class="image is-128x128">
+                                    <img src="{{news.data.thumbnail}}" alt="{{news.data.title}}"/>
+                                </figure>
+                            </div>
+                            <div class="media-content content">
+                                <h3 class="news-list-item__title h3">
+                                    <a href="{{news.url}}">
+                                        {{ news.data.title }}
+                                    </a>
+                                </h3>
+                                <p class="news-list-item__abstract">
+                                    {{news.data.abstract}}
+                                    <a class="news-list-item__link" href="{{news.url}}">Mehr erfahren &rarr;</a>
+                                </p>
+                                <div class="has-text-grey is-size-7">eingetragen am {{news.date | htmlDateString}}</div>
                             </div>
                         </div>
-                    {%- endfor -%}
-                </ul>
+                    </div>
+                {%- endfor -%}
+            </ul>
+        </div>
+   
+        <div class="container">
+            <div class="content">
+                <h2 class="h2">Willkommen bei KFZ M. Kalkbrenner</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab illo placeat temporibus obcaecati, recusandae incidunt. Iste, quia. Odit dolore enim voluptatibus in recusandae veniam voluptas eum quia suscipit, dignissimos praesentium voluptates tempore tenetur dolor aspernatur eligendi id similique accusantium natus sequi quo maiores? Exercitationem, aliquid. Dolorum expedita quod culpa perferendis?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab illo placeat temporibus obcaecati, recusandae incidunt. Iste, quia. Odit dolore enim voluptatibus in recusandae veniam voluptas eum quia suscipit, dignissimos praesentium voluptates tempore tenetur dolor aspernatur eligendi id similique accusantium natus sequi quo maiores? Exercitationem, aliquid. Dolorum expedita quod culpa perferendis?</p>
             </div>
-        </section>
-        <section class="section">
-            <div class="container">
-                <div class="content">
-                    <h2 class="h2">Willkommen bei KFZ M. Kalkbrenner</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab illo placeat temporibus obcaecati, recusandae incidunt. Iste, quia. Odit dolore enim voluptatibus in recusandae veniam voluptas eum quia suscipit, dignissimos praesentium voluptates tempore tenetur dolor aspernatur eligendi id similique accusantium natus sequi quo maiores? Exercitationem, aliquid. Dolorum expedita quod culpa perferendis?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab illo placeat temporibus obcaecati, recusandae incidunt. Iste, quia. Odit dolore enim voluptatibus in recusandae veniam voluptas eum quia suscipit, dignissimos praesentium voluptates tempore tenetur dolor aspernatur eligendi id similique accusantium natus sequi quo maiores? Exercitationem, aliquid. Dolorum expedita quod culpa perferendis?</p>
-                </div>
-            </div>
-        </section>
+        </div>
     </section>
 
-    <section class="page-homepage__services content hero is-primary">
+    <section class="section content hero is-primary">
         <div class="container">
-            <h2 class="h2 has-text-white" id="leistungen">Unsere Leistungen</h2>
-        </div>
-        <div class="container">
+            <h2 class="h2 has-text-white has-text-centered" id="leistungen">Unsere Leistungen</h2>
             <div class="columns is-multiline">
                 <div class="column is-half">
                     <div class="card">
@@ -130,7 +125,7 @@ pageType: homepage
         </div>
     </section>
 
-    <section class="page-homepage__contact content">
+    <section class="section content">
         <div class="container">
             <div class="columns">
                 <div class="column">

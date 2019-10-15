@@ -1,15 +1,8 @@
 .page-content {
     flex: 1;
-    margin-top: $navbar-height + 2rem;
+    margin-top: $navbar-height;
 
     a {
         word-wrap: break-word;
-    }
-
-    @media screen and (max-width: $desktop - 1) {
-        .container {
-            padding-left: $padding-sides;
-            padding-right: $padding-sides;
-        }
     }
 }
