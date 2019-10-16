@@ -14,6 +14,6 @@ function initSlideshow() {
         autoPlay: true,
         wrapAround: true,
         draggable: true,
-        lazyLoad: true
+        lazyLoad: 1 // lazy load selected slide and next slide
     })
 }
