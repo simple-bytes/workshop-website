@@ -8,6 +8,6 @@ function init() {
         duration: 500,
         scale: 0.5
     };
-    ScrollReveal().reveal('.page-homepage .news-list-item', config)
-    ScrollReveal().reveal('.page-homepage__services .card', config)
+    ScrollReveal().reveal('.page-homepage .news-list-item', config);
+    ScrollReveal().reveal('.page-homepage__services .card', config);
 }
