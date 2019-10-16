@@ -1,11 +1,35 @@
 import GoogleMapsLoader from 'google-maps'
 GoogleMapsLoader.KEY = 'AIzaSyAr0UpaNZYmIJ1woxO5o2dSQlkE-Mrr1CE'
-document.addEventListener('DOMContentLoaded', init)
+document.addEventListener('DOMContentLoaded', initLazily)
 
-function init() {
-    const el = document.querySelector('.map')
-    if (!el) return
+function initLazily() {
+    let mapElement = document.querySelector('.map')
+    if (!mapElement) return
+    
+    // init map lazily (via intersection ovserver)
+    
+     let options = {
+      root: null,
+      rootMargin: '100px',
+      threshold: 0
+    }
 
+    // observe map element
+    let observer = new IntersectionObserver(onIntersectionObserverChange, options);
+    observer.observe(mapElement);
+    
+    // intersectin observer callback
+    function onIntersectionObserverChange(changes, observer) {
+        changes.forEach(change => {
+            if (change.intersectionRatio > 0) {
+                init(mapElement);
+            }
+        });
+    }
+}
+
+function init(el) {
+    console.log('init map');
     GoogleMapsLoader.load((google) => {
         initGoogleMaps(el, google)
     })
