@@ -29,7 +29,6 @@ function initLazily() {
 }
 
 function init(el) {
-    console.log('init map');
     GoogleMapsLoader.load((google) => {
         initGoogleMaps(el, google)
     })
