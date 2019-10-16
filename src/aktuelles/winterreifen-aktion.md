@@ -18,4 +18,4 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 [&larr; Zurück](/#aktuelles)
 
-![](/images/aktuelles/reifen.jpg)
+![](/images/aktuelles/reifen.jpg?nf_resize=fit&w=640)
