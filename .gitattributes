@@ -2,3 +2,4 @@ src/images/slideshow/* filter=lfs diff=lfs merge=lfs -text
 src/image/slideshow/* filter=lfs diff=lfs merge=lfs -text
 src/images/aktuelles/** filter=lfs diff=lfs merge=lfs -text
 src/images/services/pickerl.png filter=lfs diff=lfs merge=lfs -text
+src/images/services/pickerl-2.jpg filter=lfs diff=lfs merge=lfs -text
