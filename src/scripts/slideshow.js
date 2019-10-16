@@ -13,6 +13,7 @@ function initSlideshow() {
         contain: true,
         autoPlay: true,
         wrapAround: true,
-        draggable: true
+        draggable: true,
+        lazyLoad: true
     })
 }
