@@ -1,14 +1,18 @@
 # kalkbrenner
 
-Website of Pension KFZ Manfred Kalkbrenner
+Website of KFZ Manfred Kalkbrenner
 
-## development
+## Prerequisites
+
+Node version 12.16.1.
+
+## Development
 
 ```
 npm start
 ```
 
-## deployment
+## Deployment
 
 ```
 npm run build

@@ -75,12 +75,28 @@
         }
     }
 
+    #leistungen {
+        margin-bottom: 2em;
+    }
+
+    @media screen and (min-width: $tablet) {
+        &__services {
+            .card {
+                min-height: 25em;
+
+                .card-header {
+                    min-height: 10em;
+                }
+            }
+        }
+    }
+
     &__pickerl {
         .media-left img {
             width: 100px;
         }
     }
-    
+
     .map {
         width: 100%;
         height: 300px;

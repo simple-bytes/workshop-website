@@ -11,9 +11,6 @@ pageType: homepage
             <div class="header-slider-item"><img class="slide-image-1" src="/images/slideshow/slide-1.jpg?nf_resize=fit&w=320" data-flickity-lazyload="/images/slideshow/slide-1.jpg" alt="Werkstatt" /></div>
             <div class="header-slider-item"><img class="slide-image-2" data-flickity-lazyload="/images/slideshow/slide-2.jpg" alt="Werkstatt" /></div>
             <div class="header-slider-item"><img class="slide-image-3" data-flickity-lazyload="/images/slideshow/slide-3.jpg" alt="Werkstatt" /></div>
-            <div class="header-slider-item"><img class="slide-image-4" data-flickity-lazyload="/images/slideshow/slide-4.jpg" alt="Werkstatt" /></div>
-            <div class="header-slider-item"><img class="slide-image-5" data-flickity-lazyload="/images/slideshow/slide-5.jpg" alt="Werkstatt" /></div>
-            <div class="header-slider-item"><img class="slide-image-6" data-flickity-lazyload="/images/slideshow/slide-6.jpg" alt="Werkstatt" /></div>
         </div>
         <div class="page-homepage__tagline-container">
             <p class="page-homepage__tagline">„Meisterleistung von Meisterhand“</p>
@@ -28,37 +25,71 @@ pageType: homepage
             <div class="columns is-multiline">
                 {%- for news in collections.news | reverse -%}
                     <div class="column is-half">
-                        <div class="media news-list-item">
-                            <div class="media-left">
-                                <a href="{{news.url}}">
-                                    <figure class="image is-128x128">
-                                        <img src="{{news.data.thumbnail}}?nf_resize=smartcrop&w=128&h=128" alt="{{news.data.title}}"/>
-                                    </figure>
-                                </a>
+                        {%- if news.data.thumbnail %}
+                            <div class="media news-list-item">
+                                <div class="media-left">
+                                    {%- if news.data.hasDetailPage -%}
+                                    <a href="{{news.url}}">
+                                        <figure class="image is-128x128">
+                                            <img src="{{news.data.thumbnail}}?nf_resize=smartcrop&w=128&h=128" alt="{{news.data.title}}"/>
+                                        </figure>
+                                    </a>
+                                    {%- else -%}
+                                        <figure class="image is-128x128">
+                                            <img src="{{news.data.thumbnail}}?nf_resize=smartcrop&w=128&h=128" alt="{{news.data.title}}"/>
+                                        </figure>
+                                    {%- endif -%}
+                                </div>
+                                <div class="media-content content">
+                                    <h3 class="news-list-item__title h3">
+                                        {%- if news.data.hasDetailPage -%}
+                                            <a href="{{news.url}}">
+                                                {{ news.data.title }}
+                                            </a>
+                                        {%- else -%}
+                                            {{ news.data.title }}
+                                        {%- endif -%}
+                                    </h3>
+                                    <p class="news-list-item__abstract">
+                                        {{news.data.abstract}}
+
+                                        {%- if news.data.hasDetailPage -%}
+                                            <a class="news-list-item__link" href="{{news.url}}"> Mehr erfahren &rarr;</a>
+                                        {%- endif -%}
+                                    </p>
+                                    <div class="has-text-grey is-size-7">eingetragen am {{news.date | htmlDateString}}</div>
+                                </div>
                             </div>
-                            <div class="media-content content">
-                                <h3 class="news-list-item__title h3">
+                        {%- else -%}
+                        <div class="news-list-item">
+                            <h3 class="news-list-item__title h3 title is-4">
+                                {%- if news.data.hasDetailPage -%}
                                     <a href="{{news.url}}">
                                         {{ news.data.title }}
                                     </a>
-                                </h3>
-                                <p class="news-list-item__abstract">
-                                    {{news.data.abstract}}
+                                {%- else -%}
+                                    {{ news.data.title }}
+                                {%- endif -%}
+                            </h3>
+                            <p class="news-list-item__abstract">
+                                {{news.data.abstract}}
+                                {%- if news.data.hasDetailPage -%}
                                     <a class="news-list-item__link" href="{{news.url}}">Mehr erfahren &rarr;</a>
-                                </p>
-                                <div class="has-text-grey is-size-7">eingetragen am {{news.date | htmlDateString}}</div>
-                            </div>
+                                {%- endif -%}
+                            </p>
+                            <div class="has-text-grey is-size-7">eingetragen am {{news.date | htmlDateString}}</div>
                         </div>
+                        {%- endif -%}
                     </div>
                 {%- endfor -%}
             </ul>
         </div>
-   
+
         <div class="container">
             <div class="content">
-                <h2 class="h2">Willkommen bei KFZ M. Kalkbrenner</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab illo placeat temporibus obcaecati, recusandae incidunt. Iste, quia. Odit dolore enim voluptatibus in recusandae veniam voluptas eum quia suscipit, dignissimos praesentium voluptates tempore tenetur dolor aspernatur eligendi id similique accusantium natus sequi quo maiores? Exercitationem, aliquid. Dolorum expedita quod culpa perferendis?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab illo placeat temporibus obcaecati, recusandae incidunt. Iste, quia. Odit dolore enim voluptatibus in recusandae veniam voluptas eum quia suscipit, dignissimos praesentium voluptates tempore tenetur dolor aspernatur eligendi id similique accusantium natus sequi quo maiores? Exercitationem, aliquid. Dolorum expedita quod culpa perferendis?</p>
+                <h2 class="h2">Willkommen bei KFZ Manfred Kalkbrenner</h2>
+                <p>Wir sind eine kleine familiär geführte Kfz-Werkstatt für Fahrzeuge aller Marken.</p>
+                <p>Kompetente und freundliche Beratung sowie persönlicher Kundenkontakt ist uns ein großes Anliegen.</p>
             </div>
         </div>
     </section>
@@ -66,63 +97,90 @@ pageType: homepage
     <section class="section content hero is-primary page-homepage__services">
         <div class="container">
             <h2 class="h2 has-text-white has-text-centered" id="leistungen">Unsere Leistungen</h2>
+
             <div class="columns is-multiline">
+
+                <div class="column is-half page-homepage__pickerl">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-header-title"><h3 class="h3">§57a Begutachtung</h3></div>
+                            <div class="card-header-icon">
+                                <img src="/images/services/pickerl.png" alt="§57a Begutachtung">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left"><img src="/images/services/pickerl-2.png?nf_resize=fit&w=100" alt="Pickerl"></div>
+                                <div class="media-content">
+                                    Wir begutachten als freie Werkstatt Fahrzeuge aller Marken für die gesetzlich vorgeschriebene „Pickerl-Überprüfung“
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="column is-half">
                     <div class="card">
                         <div class="card-header">
-                            <div class="card-header-title"><h3 class="h3">Reparatur &amp; Service</h3></div>
+                            <div class="card-header-title"><h3 class="h3">Reparatur und Service</h3></div>
                             <div class="card-header-icon">
                                 <img src="/images/services/reparatur.png" alt="Reparatur und Service">
                             </div>
                         </div>
                         <div class="card-content">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias sit labore maiores consequuntur quae. Consectetur necessitatibus voluptas reprehenderit fugiat mollitia.
+                            Durchführung von Reparatur und Service nach Herstellerangaben an Fahrzeugen sämtlicher Marken. Die Herstellergarantie bleibt erhalten.
                         </div>
-                    </div>
-            </div>
-            <div class="column is-half">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-header-title"><h3 class="h3">Spengler&shy;arbeiten</h3></div>
-                        <div class="card-header-icon">
-                            <img src="/images/services/spengler.png" alt="Spenglerarbeiten">
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias sit labore maiores consequuntur quae. Consectetur necessitatibus voluptas reprehenderit fugiat mollitia.
                     </div>
                 </div>
-            </div>
-            <div class="column is-half page-homepage__pickerl">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-header-title"><h3 class="h3">§57a Begutachtungen</h3></div>
-                        <div class="card-header-icon">
-                            <img src="/images/services/pickerl.png" alt="§57a Begutachtungen">
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-left"><img src="/images/services/pickerl-2.jpg?nf_resize=fit&w=100" alt="Pickerl"></div>
-                            <div class="media-content">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias sit labore maiores consequuntur quae. Consectetur necessitatibus voluptas reprehenderit fugiat mollitia.
+
+                <div class="column is-half">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-header-title"><h3 class="h3">Karosserie&shy;arbeiten</h3></div>
+                            <div class="card-header-icon">
+                                <img src="/images/services/karosserie.png" alt="Karosseriearbeiten">
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-half">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-header-title"><h3 class="h3">Gebrauchtwagen&shy;handel</h3></div>
-                        <div class="card-header-icon">
-                            <img src="/images/services/gebrauchtwagen.png" alt="Reparatur und Service">
+                        <div class="card-content">
+                            Vom Kratzer bis zum Unfallschaden-wir kümmern uns um ihr Anliegen rund um die Karosserie. Gerne unterstützen wir sie bei der Versicherungsabwicklung ihres Schadens.
                         </div>
                     </div>
-                    <div class="card-content">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias sit labore maiores consequuntur quae. Consectetur necessitatibus voluptas reprehenderit fugiat mollitia.
+                </div>
+
+                <div class="column is-half">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-header-title"><h3 class="h3">Dellen&shy;drücken</h3></div>
+                            <div class="card-header-icon">
+                                <img src="/images/services/dellen.png" alt="Dellendrücken">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            Ihr Fahrzeug hat eine lästige Delle oder gar einen Hagelschaden? Schnell und flexibel erledigen wir ihre Dellenreparatur.
+                        </div>
                     </div>
                 </div>
+
+                <div class="column is-half">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-header-title"><h3 class="h3">Weitere Leistungen</h3></div>
+                            <div class="card-header-icon">
+                                <img src="/images/services/weitere.png" alt="Weitere Leistungen">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <ul>
+                                <li>Reparaturen an Elektrofahrzeugen</li>
+                                <li>Wartung und Reparaturen von Klimaanlagen</li>
+                                <li>Achsvermessung</li>
+                                <li>Glasschaden-Reparatur</li>
+                                <li>Räder- und Reifenservice</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -161,23 +219,23 @@ pageType: homepage
                                 </tr>
                                 <tr>
                                     <td>Dienstag</td>
-                                    <td>07:30-17:00</td>
+                                    <td>07:30-12:00 und 12:45-17:00</td>
                                 </tr>
                                 <tr>
                                     <td>Mittwoch</td>
-                                    <td>07:30-17:00</td>
+                                    <td>07:30-12:00 und 12:45-17:00</td>
                                 </tr>
                                 <tr>
                                     <td>Donnerstag</td>
-                                    <td>07:30-17:00</td>
+                                    <td>07:30-12:00 und 12:45-17:00</td>
                                 </tr>
                                 <tr>
                                     <td>Freitag</td>
-                                    <td>07:30-17:00</td>
+                                    <td>07:30-12:00 und 12:45-17:00</td>
                                 </tr>
                                 <tr>
                                     <td>Samstag</td>
-                                    <td>07:30-17:00</td>
+                                    <td>07:30-12:00</td>
                                 </tr>
                                 <tr>
                                     <td>Sonntag</td>
