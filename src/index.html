@@ -18,72 +18,74 @@ pageType: homepage
     </section>
 
     <section class="section">
-        <div class="container">
-            <div class="content">
-                <h2 id="aktuelles">Aktuelles</h2>
-            </div>
-            <div class="columns is-multiline">
-                {%- for news in collections.news | reverse -%}
-                    <div class="column is-half">
-                        {%- if news.data.thumbnail %}
-                            <div class="media news-list-item">
-                                <div class="media-left">
-                                    {%- if news.data.hasDetailPage -%}
-                                    <a href="{{news.url}}">
-                                        <figure class="image is-128x128">
-                                            <img src="{{news.data.thumbnail}}?nf_resize=smartcrop&w=128&h=128" alt="{{news.data.title}}"/>
-                                        </figure>
-                                    </a>
-                                    {%- else -%}
-                                        <figure class="image is-128x128">
-                                            <img src="{{news.data.thumbnail}}?nf_resize=smartcrop&w=128&h=128" alt="{{news.data.title}}"/>
-                                        </figure>
-                                    {%- endif -%}
-                                </div>
-                                <div class="media-content content">
-                                    <h3 class="news-list-item__title h3">
+        {%- if collections.news.length > 0 %}
+            <div class="container">
+                <div class="content">
+                    <h2 id="aktuelles">Aktuelles</h2>
+                </div>
+                <div class="columns is-multiline">
+                    {%- for news in collections.news | reverse -%}
+                        <div class="column is-half">
+                            {%- if news.data.thumbnail %}
+                                <div class="media news-list-item">
+                                    <div class="media-left">
                                         {%- if news.data.hasDetailPage -%}
-                                            <a href="{{news.url}}">
-                                                {{ news.data.title }}
-                                            </a>
+                                        <a href="{{news.url}}">
+                                            <figure class="image is-128x128">
+                                                <img src="{{news.data.thumbnail}}?nf_resize=smartcrop&w=128&h=128" alt="{{news.data.title}}"/>
+                                            </figure>
+                                        </a>
                                         {%- else -%}
-                                            {{ news.data.title }}
+                                            <figure class="image is-128x128">
+                                                <img src="{{news.data.thumbnail}}?nf_resize=smartcrop&w=128&h=128" alt="{{news.data.title}}"/>
+                                            </figure>
                                         {%- endif -%}
-                                    </h3>
-                                    <p class="news-list-item__abstract">
-                                        {{news.data.abstract}}
+                                    </div>
+                                    <div class="media-content content">
+                                        <h3 class="news-list-item__title h3">
+                                            {%- if news.data.hasDetailPage -%}
+                                                <a href="{{news.url}}">
+                                                    {{ news.data.title }}
+                                                </a>
+                                            {%- else -%}
+                                                {{ news.data.title }}
+                                            {%- endif -%}
+                                        </h3>
+                                        <p class="news-list-item__abstract">
+                                            {{news.data.abstract}}
 
-                                        {%- if news.data.hasDetailPage -%}
-                                            <a class="news-list-item__link" href="{{news.url}}"> Mehr erfahren &rarr;</a>
-                                        {%- endif -%}
-                                    </p>
-                                    <div class="has-text-grey is-size-7">eingetragen am {{news.date | htmlDateString}}</div>
+                                            {%- if news.data.hasDetailPage -%}
+                                                <a class="news-list-item__link" href="{{news.url}}"> Mehr erfahren &rarr;</a>
+                                            {%- endif -%}
+                                        </p>
+                                        <div class="has-text-grey is-size-7">eingetragen am {{news.date | htmlDateString}}</div>
+                                    </div>
                                 </div>
-                            </div>
-                        {%- else -%}
-                        <div class="news-list-item">
-                            <h3 class="news-list-item__title h3 title is-4">
-                                {%- if news.data.hasDetailPage -%}
-                                    <a href="{{news.url}}">
+                            {%- else -%}
+                            <div class="news-list-item">
+                                <h3 class="news-list-item__title h3 title is-4">
+                                    {%- if news.data.hasDetailPage -%}
+                                        <a href="{{news.url}}">
+                                            {{ news.data.title }}
+                                        </a>
+                                    {%- else -%}
                                         {{ news.data.title }}
-                                    </a>
-                                {%- else -%}
-                                    {{ news.data.title }}
-                                {%- endif -%}
-                            </h3>
-                            <p class="news-list-item__abstract">
-                                {{news.data.abstract}}
-                                {%- if news.data.hasDetailPage -%}
-                                    <a class="news-list-item__link" href="{{news.url}}">Mehr erfahren &rarr;</a>
-                                {%- endif -%}
-                            </p>
-                            <div class="has-text-grey is-size-7">eingetragen am {{news.date | htmlDateString}}</div>
+                                    {%- endif -%}
+                                </h3>
+                                <p class="news-list-item__abstract">
+                                    {{news.data.abstract}}
+                                    {%- if news.data.hasDetailPage -%}
+                                        <a class="news-list-item__link" href="{{news.url}}">Mehr erfahren &rarr;</a>
+                                    {%- endif -%}
+                                </p>
+                                <div class="has-text-grey is-size-7">eingetragen am {{news.date | htmlDateString}}</div>
+                            </div>
+                            {%- endif -%}
                         </div>
-                        {%- endif -%}
-                    </div>
-                {%- endfor -%}
-            </ul>
-        </div>
+                    {%- endfor -%}
+                </ul>
+            </div>
+        {%- endif -%}
 
         <div class="container">
             <div class="content">
