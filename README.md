@@ -1,6 +1,6 @@
 # kalkbrenner
 
-Website of KFZ Manfred Kalkbrenner
+Website of for car workshop
 
 ## Prerequisites
 
