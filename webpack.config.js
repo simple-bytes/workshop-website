@@ -88,8 +88,12 @@ module.exports = {
   },
   plugins: plugins,
   devServer: {
-    contentBase: 'web',
-    watchContentBase: true,
-    disableHostCheck: true
+    static: {
+      directory: 'web',
+      watch: true
+    },
+    allowedHosts: 'all',
+    port: 8081,
+    hot: true
   },
 };

@@ -11,7 +11,7 @@
     "webpack:clean": "rimraf web",
     "dev:eleventy:build": "ELEVENTY_ENV=development eleventy",
     "dev:eleventy:watch": "ELEVENTY_ENV=development eleventy --watch",
-    "dev:webpack:watch": "NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server --mode development --watch",
+    "dev:webpack:watch": "NODE_OPTIONS=--openssl-legacy-provider webpack serve --mode development",
     "build": "run-s prod:*",
     "prod:del": "run-s clean",
     "prod:eleventy": "ELEVENTY_ENV=production eleventy",
