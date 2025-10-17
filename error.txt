@@ -1,0 +1,459 @@
+1:21:30 PM: npm warn deprecated glob@7.1.4: Glob versions prior to v9 are no longer supported
+1:21:30 PM: npm warn deprecated fs-write-stream-atomic@1.0.10: This package is no longer supported.
+1:21:30 PM: npm warn deprecated flatten@1.0.2: flatten is deprecated in favor of utility frameworks such as lodash.
+1:21:30 PM: npm warn deprecated figgy-pudding@3.5.1: This module is no longer supported.
+1:21:30 PM: npm warn deprecated gauge@2.7.4: This package is no longer supported.
+1:21:30 PM: npm warn deprecated favicons-webpack-plugin@2.1.0: 2.x is no longer supported - please update
+1:21:30 PM: npm warn deprecated debug@4.1.1: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+1:21:30 PM: npm warn deprecated copy-concurrently@1.0.5: This package is no longer supported.
+1:21:30 PM: npm warn deprecated are-we-there-yet@1.1.5: This package is no longer supported.
+1:21:30 PM: npm warn deprecated buffer@4.9.1: This version of 'buffer' is out-of-date. You must update to v4.9.2 or newer
+1:21:30 PM: npm warn deprecated axios@0.19.0: Critical security vulnerability fixed in v0.21.1. For more information, see https://github.com/axios/axios/pull/3410
+1:21:31 PM: npm warn deprecated @babel/plugin-proposal-dynamic-import@7.5.0: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-dynamic-import instead.
+1:21:31 PM: npm warn deprecated @babel/plugin-proposal-json-strings@7.2.0: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-json-strings instead.
+1:21:31 PM: npm warn deprecated @babel/plugin-proposal-object-rest-spread@7.5.5: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-object-rest-spread instead.
+1:21:31 PM: npm warn deprecated @babel/plugin-proposal-optional-catch-binding@7.2.0: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-optional-catch-binding instead.
+1:21:31 PM: npm warn deprecated @babel/plugin-proposal-async-generator-functions@7.2.0: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-async-generator-functions instead.
+1:21:31 PM: npm warn deprecated @babel/plugin-proposal-unicode-property-regex@7.4.4: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-unicode-property-regex instead.
+1:21:31 PM: npm warn deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+1:21:31 PM: npm warn deprecated is-data-descriptor@1.0.0: Please upgrade to v1.0.1
+1:21:31 PM: npm warn deprecated is-accessor-descriptor@1.0.0: Please upgrade to v1.0.1
+1:21:31 PM: npm warn deprecated phin@3.7.1: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+1:21:31 PM: npm warn deprecated is-accessor-descriptor@1.0.0: Please upgrade to v1.0.1
+1:21:31 PM: npm warn deprecated is-data-descriptor@1.0.0: Please upgrade to v1.0.1
+1:21:32 PM: npm warn deprecated is-data-descriptor@1.0.0: Please upgrade to v1.0.1
+1:21:32 PM: npm warn deprecated is-accessor-descriptor@1.0.0: Please upgrade to v1.0.1
+1:21:32 PM: npm warn deprecated is-data-descriptor@1.0.0: Please upgrade to v1.0.1
+1:21:32 PM: npm warn deprecated is-accessor-descriptor@1.0.0: Please upgrade to v1.0.1
+1:21:32 PM: npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+1:21:35 PM: npm warn deprecated core-js@2.6.9: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+1:21:58 PM: Failed during stage 'Install dependencies': dependency_installation script returned non-zero exit code: 1
+1:21:57 PM: npm error code 1
+1:21:57 PM: npm error path /opt/build/repo/node_modules/favicons/node_modules/sharp
+1:21:57 PM: npm error command failed
+1:21:57 PM: npm error command sh -c (node install/libvips && node install/dll-copy && prebuild-install) || (node-gyp rebuild && node install/dll-copy)
+1:21:57 PM: npm error make: Entering directory '/opt/build/repo/node_modules/favicons/node_modules/sharp/build'
+1:21:57 PM: npm error   TOUCH Release/obj.target/libvips-cpp.stamp
+1:21:57 PM: npm error   CXX(target) Release/obj.target/sharp/src/common.o
+1:21:57 PM: npm error make: Leaving directory '/opt/build/repo/node_modules/favicons/node_modules/sharp/build'
+1:21:57 PM: npm error info sharp Detected globally-installed libvips v8.15.1
+1:21:57 PM: npm error info sharp Building from source via node-gyp
+1:21:57 PM: npm error gyp info it worked if it ends with ok
+1:21:57 PM: npm error gyp info using node-gyp@11.2.0
+1:21:57 PM: npm error gyp info using node@22.20.0 | linux | x64
+1:21:57 PM: npm error gyp info find Python using Python version 3.14.0 found at "/opt/buildhome/.local/share/mise/installs/python/3.14.0/bin/python3"
+1:21:57 PM: npm error gyp info spawn /opt/buildhome/.local/share/mise/installs/python/3.14.0/bin/python3
+1:21:57 PM: npm error gyp info spawn args [
+1:21:57 PM: npm error gyp info spawn args '/opt/buildhome/.nvm/versions/node/v22.20.0/lib/node_modules/npm/node_modules/node-gyp/gyp/gyp_main.py',
+1:21:57 PM: npm error gyp info spawn args 'binding.gyp',
+1:21:57 PM: npm error gyp info spawn args '-f',
+1:21:57 PM: npm error gyp info spawn args 'make',
+1:21:57 PM: npm error gyp info spawn args '-I',
+1:21:57 PM: npm error gyp info spawn args '/opt/build/repo/node_modules/favicons/node_modules/sharp/build/config.gypi',
+1:21:57 PM: npm error gyp info spawn args '-I',
+1:21:57 PM: npm error gyp info spawn args '/opt/buildhome/.nvm/versions/node/v22.20.0/lib/node_modules/npm/node_modules/node-gyp/addon.gypi',
+1:21:57 PM: npm error gyp info spawn args '-I',
+1:21:57 PM: npm error gyp info spawn args '/opt/buildhome/.cache/node-gyp/22.20.0/include/node/common.gypi',
+1:21:57 PM: npm error gyp info spawn args '-Dlibrary=shared_library',
+1:21:57 PM: npm error gyp info spawn args '-Dvisibility=default',
+1:21:57 PM: npm error gyp info spawn args '-Dnode_root_dir=/opt/buildhome/.cache/node-gyp/22.20.0',
+1:21:57 PM: npm error gyp info spawn args '-Dnode_gyp_dir=/opt/buildhome/.nvm/versions/node/v22.20.0/lib/node_modules/npm/node_modules/node-gyp',
+1:21:57 PM: npm error gyp info spawn args '-Dnode_lib_file=/opt/buildhome/.cache/node-gyp/22.20.0/<(target_arch)/node.lib',
+1:21:57 PM: npm error gyp info spawn args '-Dmodule_root_dir=/opt/build/repo/node_modules/favicons/node_modules/sharp',
+1:21:57 PM: npm error gyp info spawn args '-Dnode_engine=v8',
+1:21:57 PM: npm error gyp info spawn args '--depth=.',
+1:21:57 PM: npm error gyp info spawn args '--no-parallel',
+1:21:57 PM: npm error gyp info spawn args '--generator-output',
+1:21:57 PM: npm error gyp info spawn args 'build',
+1:21:57 PM: npm error gyp info spawn args '-Goutput_dir=.'
+1:21:57 PM: npm error gyp info spawn args ]
+1:21:57 PM: npm error <string>:76: SyntaxWarning: "\/" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\/"? A raw string is also an option.
+1:21:57 PM: npm error gyp info spawn make
+1:21:57 PM: npm error gyp info spawn args [ 'BUILDTYPE=Release', '-C', 'build' ]
+1:21:57 PM: npm error In file included from /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-handle-base.h:8,
+1:21:57 PM: npm error                  from /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-local-handle.h:13,
+1:21:57 PM: npm error                  from /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-array-buffer.h:12,
+1:21:57 PM: npm error                  from /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8.h:24,
+1:21:57 PM: npm error                  from /opt/buildhome/.cache/node-gyp/22.20.0/include/node/node.h:74,
+1:21:57 PM: npm error                  from ../src/common.cc:22:
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h: In static member function ‘static constexpr int v8::internal::SmiTagging<4>::SmiToInt(v8::internal::Address)’:
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:89:3: error: body of ‘constexpr’ function ‘static constexpr int v8::internal::SmiTagging<4>::SmiToInt(v8::internal::Address)’ not a return-statement
+1:21:57 PM: npm error    89 |   }
+1:21:57 PM: npm error       |   ^
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h: In static member function ‘static constexpr int v8::internal::SmiTagging<8>::SmiToInt(v8::internal::Address)’:
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:114:3: error: body of ‘constexpr’ function ‘static constexpr int v8::internal::SmiTagging<8>::SmiToInt(v8::internal::Address)’ not a return-statement
+1:21:57 PM: npm error   114 |   }
+1:21:57 PM: npm error       |   ^
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h: In function ‘void v8::internal::PerformCastCheck(T*)’:
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1093:38: error: ‘remove_cv_t’ is not a member of ‘std’; did you mean ‘remove_cv’?
+1:21:57 PM: npm error  1093 |             !std::is_same<Data, std::remove_cv_t<T>>::value>::Perform(data);
+1:21:57 PM: npm error       |                                      ^~~~~~~~~~~
+1:21:57 PM: npm error       |                                      remove_cv
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1093:38: error: ‘remove_cv_t’ is not a member of ‘std’; did you mean ‘remove_cv’?
+1:21:57 PM: npm error  1093 |             !std::is_same<Data, std::remove_cv_t<T>>::value>::Perform(data);
+1:21:57 PM: npm error       |                                      ^~~~~~~~~~~
+1:21:57 PM: npm error       |                                      remove_cv
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1093:50: error: template argument 2 is invalid
+1:21:57 PM: npm error  1093 |             !std::is_same<Data, std::remove_cv_t<T>>::value>::Perform(data);
+1:21:57 PM: npm error       |                                                  ^
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1093:63: error: ‘::Perform’ has not been declared
+1:21:57 PM: npm error  1093 |             !std::is_same<Data, std::remove_cv_t<T>>::value>::Perform(data);
+1:21:57 PM: npm error       |                                                               ^~~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h: At global scope:
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1159:13: error: ‘is_void_v’ is not a member of ‘std’; did you mean ‘is_void’?
+1:21:57 PM: npm error  1159 |       !std::is_void_v<ElementType> ||
+1:21:57 PM: npm error       |             ^~~~~~~~~
+1:21:57 PM: npm error       |             is_void
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1159:34: error: expected primary-expression before ‘>’ token
+1:21:57 PM: npm error  1159 |       !std::is_void_v<ElementType> ||
+1:21:57 PM: npm error       |                                  ^
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1159:22: warning: logical not is only applied to the left hand side of comparison [-Wlogical-not-parentheses]
+1:21:57 PM: npm error  1159 |       !std::is_void_v<ElementType> ||
+1:21:57 PM: npm error       |                      ^
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1159:36: error: expected primary-expression before ‘||’ token
+1:21:57 PM: npm error  1159 |       !std::is_void_v<ElementType> ||
+1:21:57 PM: npm error       |                                    ^~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1160:13: error: ‘is_convertible_v’ is not a member of ‘std’; did you mean ‘is_convertible’?
+1:21:57 PM: npm error  1160 |       (std::is_convertible_v<typename std::iterator_traits<Iterator>::pointer,
+1:21:57 PM: npm error       |             ^~~~~~~~~~~~~~~~
+1:21:57 PM: npm error       |             is_convertible
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1160:78: error: expected ‘(’ before ‘,’ token
+1:21:57 PM: npm error  1160 |       (std::is_convertible_v<typename std::iterator_traits<Iterator>::pointer,
+1:21:57 PM: npm error       |                                                                              ^
+1:21:57 PM: npm error       |                                                                              (
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1161:41: error: expected primary-expression before ‘*’ token
+1:21:57 PM: npm error  1161 |                              ElementType*> &&
+1:21:57 PM: npm error       |                                         ^
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1161:42: error: expected primary-expression before ‘>’ token
+1:21:57 PM: npm error  1161 |                              ElementType*> &&
+1:21:57 PM: npm error       |                                          ^
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1162:8: error: label ‘std’ referenced outside of any function
+1:21:57 PM: npm error  1162 |        std::is_convertible_v<typename std::iterator_traits<Iterator>::reference,
+1:21:57 PM: npm error       |        ^~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1162:11: error: expected ‘)’ before ‘::’ token
+1:21:57 PM: npm error  1162 |        std::is_convertible_v<typename std::iterator_traits<Iterator>::reference,
+1:21:57 PM: npm error       |           ^~
+1:21:57 PM: npm error       |           )
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1160:7: note: to match this ‘(’
+1:21:57 PM: npm error  1160 |       (std::is_convertible_v<typename std::iterator_traits<Iterator>::pointer,
+1:21:57 PM: npm error       |       ^
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1163:45: error: expected ‘,’ before ‘;’ token
+1:21:57 PM: npm error  1163 |                              ElementType&>));
+1:21:57 PM: npm error       |                                             ^
+1:21:57 PM: npm error       |                                             ,
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1163:45: error: expected string-literal before ‘;’ token
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1163:45: error: expected ‘)’ before ‘;’ token
+1:21:57 PM: npm error  1163 |                              ElementType&>));
+1:21:57 PM: npm error       |                                             ^
+1:21:57 PM: npm error       |                                             )
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1158:16: note: to match this ‘(’
+1:21:57 PM: npm error  1158 |   static_assert(
+1:21:57 PM: npm error       |                ^
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1170:12: error: ‘conditional_t’ in namespace ‘std’ does not name a template type; did you mean ‘conditional’?
+1:21:57 PM: npm error  1170 |       std::conditional_t<std::is_void_v<ElementType>,
+1:21:57 PM: npm error       |            ^~~~~~~~~~~~~
+1:21:57 PM: npm error       |            conditional
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1174:12: error: ‘conditional_t’ in namespace ‘std’ does not name a template type; did you mean ‘conditional’?
+1:21:57 PM: npm error  1174 |       std::conditional_t<std::is_void_v<ElementType>,
+1:21:57 PM: npm error       |            ^~~~~~~~~~~~~
+1:21:57 PM: npm error       |            conditional
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1178:12: error: ‘conditional_t’ in namespace ‘std’ does not name a template type; did you mean ‘conditional’?
+1:21:57 PM: npm error  1178 |       std::conditional_t<std::is_void_v<ElementType>,
+1:21:57 PM: npm error       |            ^~~~~~~~~~~~~
+1:21:57 PM: npm error       |            conditional
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1186:18: error: ‘std::enable_if_t’ has not been declared
+1:21:57 PM: npm error  1186 |             std::enable_if_t<std::is_convertible_v<OtherIterator, Iterator>,
+1:21:57 PM: npm error       |                  ^~~~~~~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1186:29: error: expected ‘>’ before ‘<’ token
+1:21:57 PM: npm error  1186 |             std::enable_if_t<std::is_convertible_v<OtherIterator, Iterator>,
+1:21:57 PM: npm error       |                             ^
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1192:13: error: ‘reference’ does not name a type
+1:21:57 PM: npm error  1192 |   constexpr reference operator*() const noexcept { return *it_; }
+1:21:57 PM: npm error       |             ^~~~~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1193:13: error: ‘pointer’ does not name a type
+1:21:57 PM: npm error  1193 |   constexpr pointer operator->() const noexcept { return it_.operator->(); }
+1:21:57 PM: npm error       |             ^~~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-internal.h:1230:13: error: ‘reference’ does not name a type
+1:21:57 PM: npm error  1230 |   constexpr reference operator[](difference_type n) const noexcept {
+1:21:57 PM: npm error       |             ^~~~~~~~~
+1:21:57 PM: npm error In file included from /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-object.h:9,
+1:21:57 PM: npm error                  from /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-array-buffer.h:13:
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-maybe.h:106:27: error: ‘std::enable_if_t’ has not been declared
+1:21:57 PM: npm error   106 |   template <class U, std::enable_if_t<!std::is_lvalue_reference_v<U>>*>
+1:21:57 PM: npm error       |                           ^~~~~~~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-maybe.h:106:38: error: expected ‘>’ before ‘<’ token
+1:21:57 PM: npm error   106 |   template <class U, std::enable_if_t<!std::is_lvalue_reference_v<U>>*>
+1:21:57 PM: npm error       |                                      ^
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-maybe.h:123:25: error: ‘std::enable_if_t’ has not been declared
+1:21:57 PM: npm error   123 | template <class T, std::enable_if_t<!std::is_lvalue_reference_v<T>>* = nullptr>
+1:21:57 PM: npm error       |                         ^~~~~~~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-maybe.h:123:36: error: expected ‘>’ before ‘<’ token
+1:21:57 PM: npm error   123 | template <class T, std::enable_if_t<!std::is_lvalue_reference_v<T>>* = nullptr>
+1:21:57 PM: npm error       |                                    ^
+1:21:57 PM: npm error In file included from /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-script.h:19,
+1:21:57 PM: npm error                  from /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-debug.h:10,
+1:21:57 PM: npm error                  from /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-isolate.h:19,
+1:21:57 PM: npm error                  from /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-snapshot.h:9,
+1:21:57 PM: npm error                  from /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-context.h:15,
+1:21:57 PM: npm error                  from /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8.h:26:
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:35:25: warning: variable templates only available with ‘-std=c++14’ or ‘-std=gnu++14’ [-Wc++14-extensions]
+1:21:57 PM: npm error    35 |   static constexpr bool is_array_convertible_v =
+1:21:57 PM: npm error       |                         ^~~~~~~~~~~~~~~~~~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:46:12: error: ‘void_t’ is not a member of ‘std’
+1:21:57 PM: npm error    46 |       std::void_t<
+1:21:57 PM: npm error       |            ^~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:46:12: note: ‘std::void_t’ is only available from C++17 onwards
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:46:12: error: ‘void_t’ is not a member of ‘std’
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:46:12: note: ‘std::void_t’ is only available from C++17 onwards
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:49:37: error: ‘remove_reference_t’ is not a member of ‘std’; did you mean ‘remove_reference’?
+1:21:57 PM: npm error    49 |           is_array_convertible<std::remove_reference_t<iter_reference_t<It>>,
+1:21:57 PM: npm error       |                                     ^~~~~~~~~~~~~~~~~~
+1:21:57 PM: npm error       |                                     remove_reference
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:49:37: error: ‘remove_reference_t’ is not a member of ‘std’; did you mean ‘remove_reference’?
+1:21:57 PM: npm error    49 |           is_array_convertible<std::remove_reference_t<iter_reference_t<It>>,
+1:21:57 PM: npm error       |                                     ^~~~~~~~~~~~~~~~~~
+1:21:57 PM: npm error       |                                     remove_reference
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:49:75: error: wrong number of template arguments (1, should be 2)
+1:21:57 PM: npm error    49 |           is_array_convertible<std::remove_reference_t<iter_reference_t<It>>,
+1:21:57 PM: npm error       |                                                                           ^~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:33:9: note: provided for ‘template<class T> template<class From, class To> using v8::MemorySpan<T>::is_array_convertible = std::is_convertible<From (*)[], To (*)[]>’
+1:21:57 PM: npm error    33 |   using is_array_convertible = std::is_convertible<From (*)[], To (*)[]>;
+1:21:57 PM: npm error       |         ^~~~~~~~~~~~~~~~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:50:32: error: wrong number of template arguments (4, should be at least 1)
+1:21:57 PM: npm error    50 |                                T>>> : std::true_type {};
+1:21:57 PM: npm error       |                                ^
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:42:10: note: provided for ‘template<class T> template<class It, class> struct v8::MemorySpan<T>::is_compatible_iterator’
+1:21:57 PM: npm error    42 |   struct is_compatible_iterator : std::false_type {};
+1:21:57 PM: npm error       |          ^~~~~~~~~~~~~~~~~~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:50:33: error: expected unqualified-id before ‘>’ token
+1:21:57 PM: npm error    50 |                                T>>> : std::true_type {};
+1:21:57 PM: npm error       |                                 ^~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:52:25: warning: variable templates only available with ‘-std=c++14’ or ‘-std=gnu++14’ [-Wc++14-extensions]
+1:21:57 PM: npm error    52 |   static constexpr bool is_compatible_iterator_v =
+1:21:57 PM: npm error       |                         ^~~~~~~~~~~~~~~~~~~~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:61:29: error: ‘void_t’ in namespace ‘std’ does not name a template type
+1:21:57 PM: npm error    61 |             typename = std::void_t<decltype(std::declval<It&>().operator->())>>
+1:21:57 PM: npm error       |                             ^~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:61:24: note: ‘std::void_t’ is only available from C++17 onwards
+1:21:57 PM: npm error    61 |             typename = std::void_t<decltype(std::declval<It&>().operator->())>>
+1:21:57 PM: npm error       |                        ^~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:61:35: error: expected ‘>’ before ‘<’ token
+1:21:57 PM: npm error    61 |             typename = std::void_t<decltype(std::declval<It&>().operator->())>>
+1:21:57 PM: npm error       |                                   ^
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:62:20: error: ‘to_address’ function uses ‘auto’ type specifier without trailing return type
+1:21:57 PM: npm error    62 |   static constexpr auto to_address(It it) noexcept {
+1:21:57 PM: npm error       |                    ^~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:62:20: note: deduced return type only available with ‘-std=c++14’ or ‘-std=gnu++14’
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:77:18: error: ‘std::enable_if_t’ has not been declared
+1:21:57 PM: npm error    77 |             std::enable_if_t<is_compatible_iterator_v<Iterator>, bool> = true>
+1:21:57 PM: npm error       |                  ^~~~~~~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:77:29: error: expected ‘>’ before ‘<’ token
+1:21:57 PM: npm error    77 |             std::enable_if_t<is_compatible_iterator_v<Iterator>, bool> = true>
+1:21:57 PM: npm error       |                             ^
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:84:18: error: ‘std::enable_if_t’ has not been declared
+1:21:57 PM: npm error    84 |             std::enable_if_t<is_compatible_iterator_v<Iterator> &&
+1:21:57 PM: npm error       |                  ^~~~~~~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:84:29: error: expected ‘>’ before ‘<’ token
+1:21:57 PM: npm error    84 |             std::enable_if_t<is_compatible_iterator_v<Iterator> &&
+1:21:57 PM: npm error       |                             ^
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:98:18: error: ‘std::enable_if_t’ has not been declared
+1:21:57 PM: npm error    98 |             std::enable_if_t<is_array_convertible_v<U, T>, bool> = true>
+1:21:57 PM: npm error       |                  ^~~~~~~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:98:29: error: expected ‘>’ before ‘<’ token
+1:21:57 PM: npm error    98 |             std::enable_if_t<is_array_convertible_v<U, T>, bool> = true>
+1:21:57 PM: npm error       |                             ^
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:105:18: error: ‘std::enable_if_t’ has not been declared
+1:21:57 PM: npm error   105 |             std::enable_if_t<is_array_convertible_v<const U, T>, bool> = true>
+1:21:57 PM: npm error       |                  ^~~~~~~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:105:29: error: expected ‘>’ before ‘<’ token
+1:21:57 PM: npm error   105 |             std::enable_if_t<is_array_convertible_v<const U, T>, bool> = true>
+1:21:57 PM: npm error       |                             ^
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:174:27: error: ‘remove_cv_t’ is not a member of ‘std’; did you mean ‘remove_cv’?
+1:21:57 PM: npm error   174 | constexpr std::array<std::remove_cv_t<T>, N> to_array_lvalue_impl(
+1:21:57 PM: npm error       |                           ^~~~~~~~~~~
+1:21:57 PM: npm error       |                           remove_cv
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:174:27: error: ‘remove_cv_t’ is not a member of ‘std’; did you mean ‘remove_cv’?
+1:21:57 PM: npm error   174 | constexpr std::array<std::remove_cv_t<T>, N> to_array_lvalue_impl(
+1:21:57 PM: npm error       |                           ^~~~~~~~~~~
+1:21:57 PM: npm error       |                           remove_cv
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:174:40: error: wrong number of template arguments (1, should be 2)
+1:21:57 PM: npm error   174 | constexpr std::array<std::remove_cv_t<T>, N> to_array_lvalue_impl(
+1:21:57 PM: npm error       |                                        ^
+1:21:57 PM: npm error In file included from /usr/include/c++/13/mutex:40,
+1:21:57 PM: npm error                  from ../src/common.cc:20:
+1:21:57 PM: npm error /usr/include/c++/13/tuple:2019:45: note: provided for ‘template<class _Tp, long unsigned int _Nm> struct std::array’
+1:21:57 PM: npm error  2019 |   template<typename _Tp, size_t _Nm> struct array;
+1:21:57 PM: npm error       |                                             ^~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:174:41: error: expected unqualified-id before ‘,’ token
+1:21:57 PM: npm error   174 | constexpr std::array<std::remove_cv_t<T>, N> to_array_lvalue_impl(
+1:21:57 PM: npm error       |                                         ^
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:180:27: error: ‘remove_cv_t’ is not a member of ‘std’; did you mean ‘remove_cv’?
+1:21:57 PM: npm error   180 | constexpr std::array<std::remove_cv_t<T>, N> to_array_rvalue_impl(
+1:21:57 PM: npm error       |                           ^~~~~~~~~~~
+1:21:57 PM: npm error       |                           remove_cv
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:180:27: error: ‘remove_cv_t’ is not a member of ‘std’; did you mean ‘remove_cv’?
+1:21:57 PM: npm error   180 | constexpr std::array<std::remove_cv_t<T>, N> to_array_rvalue_impl(
+1:21:57 PM: npm error       |                           ^~~~~~~~~~~
+1:21:57 PM: npm error       |                           remove_cv
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:180:40: error: wrong number of template arguments (1, should be 2)
+1:21:57 PM: npm error   180 | constexpr std::array<std::remove_cv_t<T>, N> to_array_rvalue_impl(
+1:21:57 PM: npm error       |                                        ^
+1:21:57 PM: npm error /usr/include/c++/13/tuple:2019:45: note: provided for ‘template<class _Tp, long unsigned int _Nm> struct std::array’
+1:21:57 PM: npm error  2019 |   template<typename _Tp, size_t _Nm> struct array;
+1:21:57 PM: npm error       |                                             ^~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:180:41: error: expected unqualified-id before ‘,’ token
+1:21:57 PM: npm error   180 | constexpr std::array<std::remove_cv_t<T>, N> to_array_rvalue_impl(
+1:21:57 PM: npm error       |                                         ^
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:187:27: error: ‘remove_cv_t’ is not a member of ‘std’; did you mean ‘remove_cv’?
+1:21:57 PM: npm error   187 | constexpr std::array<std::remove_cv_t<T>, N> to_array(T (&a)[N]) {
+1:21:57 PM: npm error       |                           ^~~~~~~~~~~
+1:21:57 PM: npm error       |                           remove_cv
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:187:27: error: ‘remove_cv_t’ is not a member of ‘std’; did you mean ‘remove_cv’?
+1:21:57 PM: npm error   187 | constexpr std::array<std::remove_cv_t<T>, N> to_array(T (&a)[N]) {
+1:21:57 PM: npm error       |                           ^~~~~~~~~~~
+1:21:57 PM: npm error       |                           remove_cv
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:187:40: error: wrong number of template arguments (1, should be 2)
+1:21:57 PM: npm error   187 | constexpr std::array<std::remove_cv_t<T>, N> to_array(T (&a)[N]) {
+1:21:57 PM: npm error       |                                        ^
+1:21:57 PM: npm error /usr/include/c++/13/tuple:2019:45: note: provided for ‘template<class _Tp, long unsigned int _Nm> struct std::array’
+1:21:57 PM: npm error  2019 |   template<typename _Tp, size_t _Nm> struct array;
+1:21:57 PM: npm error       |                                             ^~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:187:41: error: expected unqualified-id before ‘,’ token
+1:21:57 PM: npm error   187 | constexpr std::array<std::remove_cv_t<T>, N> to_array(T (&a)[N]) {
+1:21:57 PM: npm error       |                                         ^
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:192:27: error: ‘remove_cv_t’ is not a member of ‘std’; did you mean ‘remove_cv’?
+1:21:57 PM: npm error   192 | constexpr std::array<std::remove_cv_t<T>, N> to_array(T (&&a)[N]) {
+1:21:57 PM: npm error       |                           ^~~~~~~~~~~
+1:21:57 PM: npm error       |                           remove_cv
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:192:27: error: ‘remove_cv_t’ is not a member of ‘std’; did you mean ‘remove_cv’?
+1:21:57 PM: npm error   192 | constexpr std::array<std::remove_cv_t<T>, N> to_array(T (&&a)[N]) {
+1:21:57 PM: npm error       |                           ^~~~~~~~~~~
+1:21:57 PM: npm error       |                           remove_cv
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:192:40: error: wrong number of template arguments (1, should be 2)
+1:21:57 PM: npm error   192 | constexpr std::array<std::remove_cv_t<T>, N> to_array(T (&&a)[N]) {
+1:21:57 PM: npm error       |                                        ^
+1:21:57 PM: npm error /usr/include/c++/13/tuple:2019:45: note: provided for ‘template<class _Tp, long unsigned int _Nm> struct std::array’
+1:21:57 PM: npm error  2019 |   template<typename _Tp, size_t _Nm> struct array;
+1:21:57 PM: npm error       |                                             ^~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-memory-span.h:192:41: error: expected unqualified-id before ‘,’ token
+1:21:57 PM: npm error   192 | constexpr std::array<std::remove_cv_t<T>, N> to_array(T (&&a)[N]) {
+1:21:57 PM: npm error       |                                         ^
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-isolate.h: In member function ‘v8::MaybeLocal<T> v8::Isolate::GetDataFromSnapshotOnce(size_t)’:
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-isolate.h:1757:7: warning: init-statement in selection statements only available with ‘-std=c++17’ or ‘-std=gnu++17’ [-Wc++17-extensions]
+1:21:57 PM: npm error  1757 |   if (auto slot = GetDataFromSnapshotOnce(index); slot) {
+1:21:57 PM: npm error       |       ^~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-context.h: In member function ‘v8::MaybeLocal<T> v8::Context::GetDataFromSnapshotOnce(size_t)’:
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-context.h:468:7: warning: init-statement in selection statements only available with ‘-std=c++17’ or ‘-std=gnu++17’ [-Wc++17-extensions]
+1:21:57 PM: npm error   468 |   if (auto slot = GetDataFromSnapshotOnce(index); slot) {
+1:21:57 PM: npm error       |       ^~~~
+1:21:57 PM: npm error In file included from /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-function.h:15,
+1:21:57 PM: npm error                  from /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8.h:33:
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-template.h: At global scope:
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-template.h:1214:42: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+1:21:57 PM: npm error  1214 |       Isolate* isolate, MemorySpan<const std::string_view> names);
+1:21:57 PM: npm error       |                                          ^~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-template.h:1214:58: error: template argument 1 is invalid
+1:21:57 PM: npm error  1214 |       Isolate* isolate, MemorySpan<const std::string_view> names);
+1:21:57 PM: npm error       |                                                          ^
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-template.h:1214:42: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+1:21:57 PM: npm error  1214 |       Isolate* isolate, MemorySpan<const std::string_view> names);
+1:21:57 PM: npm error       |                                          ^~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-template.h:1214:58: error: template argument 1 is invalid
+1:21:57 PM: npm error  1214 |       Isolate* isolate, MemorySpan<const std::string_view> names);
+1:21:57 PM: npm error       |                                                          ^
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-template.h:1214:42: error: ISO C++ forbids declaration of ‘type name’ with no type [-fpermissive]
+1:21:57 PM: npm error  1214 |       Isolate* isolate, MemorySpan<const std::string_view> names);
+1:21:57 PM: npm error       |                                          ^~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-template.h:1214:58: error: template argument 1 is invalid
+1:21:57 PM: npm error  1214 |       Isolate* isolate, MemorySpan<const std::string_view> names);
+1:21:57 PM: npm error       |                                                          ^
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-template.h:1214:25: error: ‘MemorySpan’ is not a type
+1:21:57 PM: npm error  1214 |       Isolate* isolate, MemorySpan<const std::string_view> names);
+1:21:57 PM: npm error       |                         ^~~~~~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-template.h:1214:35: error: expected ‘,’ or ‘...’ before ‘<’ token
+1:21:57 PM: npm error  1214 |       Isolate* isolate, MemorySpan<const std::string_view> names);
+1:21:57 PM: npm error       |                                   ^
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/node.h:542:32: error: ‘std::string_view’ has not been declared
+1:21:57 PM: npm error   542 |   static Pointer FromBlob(std::string_view in);
+1:21:57 PM: npm error       |                                ^~~~~~~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/node.h:698:8: error: ‘optional’ in namespace ‘std’ does not name a template type
+1:21:57 PM: npm error   698 |   std::optional<std::string> builder_script_path;
+1:21:57 PM: npm error       |        ^~~~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/node.h:698:3: note: ‘std::optional’ is only available from C++17 onwards
+1:21:57 PM: npm error   698 |   std::optional<std::string> builder_script_path;
+1:21:57 PM: npm error       |   ^~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/node.h:727:10: error: ‘std::string_view’ has not been declared
+1:21:57 PM: npm error   727 |     std::string_view thread_name);
+1:21:57 PM: npm error       |          ^~~~~~~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/node.h:750:10: error: ‘std::string_view’ has not been declared
+1:21:57 PM: npm error   750 |     std::string_view child_url,
+1:21:57 PM: npm error       |          ^~~~~~~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/node.h:751:10: error: ‘std::string_view’ has not been declared
+1:21:57 PM: npm error   751 |     std::string_view name);
+1:21:57 PM: npm error       |          ^~~~~~~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/node.h:786:10: error: ‘std::string_view’ has not been declared
+1:21:57 PM: npm error   786 |     std::string_view main_script_source_utf8,
+1:21:57 PM: npm error       |          ^~~~~~~~~~~
+1:21:57 PM: npm error In file included from ../../../../nan/nan.h:174,
+1:21:57 PM: npm error                  from ../src/common.cc:24:
+1:21:57 PM: npm error ../../../../nan/nan_callbacks.h:55:23: error: ‘AccessorSignature’ is not a member of ‘v8’
+1:21:57 PM: npm error    55 | typedef v8::Local<v8::AccessorSignature> Sig;
+1:21:57 PM: npm error       |                       ^~~~~~~~~~~~~~~~~
+1:21:57 PM: npm error ../../../../nan/nan_callbacks.h:55:23: error: ‘AccessorSignature’ is not a member of ‘v8’
+1:21:57 PM: npm error ../../../../nan/nan_callbacks.h:55:40: error: template argument 1 is invalid
+1:21:57 PM: npm error    55 | typedef v8::Local<v8::AccessorSignature> Sig;
+1:21:57 PM: npm error       |                                        ^
+1:21:57 PM: npm error ../../../../nan/nan.h: In function ‘void Nan::SetAccessor(v8::Local<v8::ObjectTemplate>, v8::Local<v8::String>, GetterCallback, SetterCallback, v8::Local<v8::Value>, v8::AccessControl, v8::PropertyAttribute, imp::Sig)’:
+1:21:57 PM: npm error ../../../../nan/nan.h:2536:19: error: no matching function for call to ‘v8::ObjectTemplate::SetAccessor(v8::Local<v8::String>&, void (*&)(v8::Local<v8::Name>, const v8::PropertyCallbackInfo<v8::Value>&), void (*&)(v8::Local<v8::Name>, v8::Local<v8::Value>, const v8::PropertyCallbackInfo<void>&), v8::Local<v8::Object>&, v8::AccessControl&, v8::PropertyAttribute&, Nan::imp::Sig&)’
+1:21:57 PM: npm error  2536 |   tpl->SetAccessor(
+1:21:57 PM: npm error       |   ~~~~~~~~~~~~~~~~^
+1:21:57 PM: npm error  2537 |       name
+1:21:57 PM: npm error       |       ~~~~
+1:21:57 PM: npm error  2538 |     , getter_
+1:21:57 PM: npm error       |     ~~~~~~~~~
+1:21:57 PM: npm error  2539 |     , setter_
+1:21:57 PM: npm error       |     ~~~~~~~~~
+1:21:57 PM: npm error  2540 |     , obj
+1:21:57 PM: npm error       |     ~~~~~
+1:21:57 PM: npm error  2541 |     , settings
+1:21:57 PM: npm error       |     ~~~~~~~~~~
+1:21:57 PM: npm error  2542 |     , attribute
+1:21:57 PM: npm error       |     ~~~~~~~~~~~
+1:21:57 PM: npm error  2543 |     , signature);
+1:21:57 PM: npm error       |     ~~~~~~~~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-template.h:1049:8: note: candidate: ‘void v8::ObjectTemplate::SetAccessor(v8::Local<v8::String>, v8::AccessorGetterCallback, v8::AccessorSetterCallback, v8::Local<v8::Value>, v8::PropertyAttribute, v8::SideEffectType, v8::SideEffectType)’
+1:21:57 PM: npm error  1049 |   void SetAccessor(
+1:21:57 PM: npm error       |        ^~~~~~~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-template.h:1052:61: note:   no known conversion for argument 5 from ‘v8::AccessControl’ to ‘v8::PropertyAttribute’
+1:21:57 PM: npm error  1052 |       Local<Value> data = Local<Value>(), PropertyAttribute attribute = None,
+1:21:57 PM: npm error       |                                           ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-template.h:1055:8: note: candidate: ‘void v8::ObjectTemplate::SetAccessor(v8::Local<v8::Name>, v8::AccessorNameGetterCallback, v8::AccessorNameSetterCallback, v8::Local<v8::Value>, v8::PropertyAttribute, v8::SideEffectType, v8::SideEffectType)’
+1:21:57 PM: npm error  1055 |   void SetAccessor(
+1:21:57 PM: npm error       |        ^~~~~~~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-template.h:1058:61: note:   no known conversion for argument 5 from ‘v8::AccessControl’ to ‘v8::PropertyAttribute’
+1:21:57 PM: npm error  1058 |       Local<Value> data = Local<Value>(), PropertyAttribute attribute = None,
+1:21:57 PM: npm error       |                                           ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+1:21:57 PM: npm error In file included from ../../../../nan/nan.h:2884:
+1:21:57 PM: npm error ../../../../nan/nan_typedarray_contents.h: In constructor ‘Nan::TypedArrayContents<T>::TypedArrayContents(v8::Local<v8::Value>)’:
+1:21:57 PM: npm error ../../../../nan/nan_typedarray_contents.h:34:43: error: ‘class v8::ArrayBuffer’ has no member named ‘GetContents’
+1:21:57 PM: npm error    34 |       data   = static_cast<char*>(buffer->GetContents().Data()) + byte_offset;
+1:21:57 PM: npm error       |                                           ^~~~~~~~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-local-handle.h: In instantiation of ‘v8::Local<T>::Local(v8::Local<S>) [with S = v8::Data; T = v8::Value]’:
+1:21:57 PM: npm error ../../../../nan/nan_callbacks_12_inl.h:175:53:   required from here
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-local-handle.h:269:42: error: static assertion failed: type check
+1:21:57 PM: npm error   269 |     static_assert(std::is_base_of<T, S>::value, "type check");
+1:21:57 PM: npm error       |                                          ^~~~~
+1:21:57 PM: npm error /opt/buildhome/.cache/node-gyp/22.20.0/include/node/v8-local-handle.h:269:42: note: ‘std::integral_constant<bool, false>::value’ evaluates to false
+1:21:57 PM: npm error make: *** [sharp.target.mk:166: Release/obj.target/sharp/src/common.o] Error 1
+1:21:57 PM: npm error gyp ERR! build error
+1:21:57 PM: npm error gyp ERR! stack Error: `make` failed with exit code: 2
+1:21:57 PM: npm error gyp ERR! stack at ChildProcess.<anonymous> (/opt/buildhome/.nvm/versions/node/v22.20.0/lib/node_modules/npm/node_modules/node-gyp/lib/build.js:219:23)
+1:21:57 PM: npm error gyp ERR! System Linux 6.1.153-175.280.amzn2023.x86_64
+1:21:57 PM: npm error gyp ERR! command "/opt/buildhome/.nvm/versions/node/v22.20.0/bin/node" "/opt/buildhome/.nvm/versions/node/v22.20.0/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "rebuild"
+1:21:57 PM: npm error gyp ERR! cwd /opt/build/repo/node_modules/favicons/node_modules/sharp
+1:21:57 PM: npm error gyp ERR! node -v v22.20.0
+1:21:57 PM: npm error gyp ERR! node-gyp -v v11.2.0
+1:21:57 PM: npm error gyp ERR! not ok
+1:21:57 PM: npm error A complete log of this run can be found in: /opt/buildhome/.npm/_logs/2025-10-17T11_21_27_383Z-debug-0.log
+1:21:57 PM: Error during npm install
+1:21:58 PM: Failing build: Failed to install dependencies
